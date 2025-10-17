@@ -59,9 +59,9 @@ $(document).ready(function() {
     ]
   });
 
-  // Image Pop Up
+  // Image Pop Up (only open lightbox for anchors with .tm-lightbox)
   $(".tm-gallery").magnificPopup({
-    delegate: "a", // child items selector, by clicking on it popup will open
+    delegate: "a.tm-lightbox", // only target image anchors
     type: "image",
     gallery: { enabled: true }
   });

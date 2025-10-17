@@ -223,7 +223,9 @@ https://templatemo.com/tm-536-dream-pulse
                   return `
                   <div class="tm-gallery-item">
                     <figure class="effect-bubba">
-                    <img src="${imgSrc}" alt="${fullName}" class="img-fluid" />
+                      <a href="${imgSrc}" class="tm-lightbox" data-mfp-src="${imgSrc}" title="${fullName}">
+                        <img src="${imgSrc}" alt="${fullName}" class="img-fluid" />
+                      </a>
                     <figcaption>
                       <h2>${owner} <span>/ ${repoName}</span></h2>
                       <p>${desc}</p>
